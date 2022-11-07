@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: Montserrat;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+p {
+    margin: 3px;
+    padding: 8px;
+}
+
+.navbar {
+    font-weight: bold;
+    display: flex;
+    padding: 0px;
+    background: #000 url('img/istockphoto-1160380152-170667a.jpg');
+    overflow: hidden;
+    margin: 0px;
+    width: 100%;
+
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
