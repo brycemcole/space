@@ -1,6 +1,17 @@
+
 @font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
+}
+/* make background material dark color and font white*/
+body {
+    background-color: #000000;
+    color: #fff;
+}
+/* make the header text white and center it */
+h2 {
+    color: #fff;
+    text-align: center;
 }
 
 body {
@@ -10,59 +21,69 @@ body {
     margin: 0px;
 }
 
-
-p {
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
     margin: 3px;
-    padding: 8px;
 }
 
-.navbar {
-    font-weight: bold;
-    display: flex;
-    padding: 0px;
-    background: #000 url('img/istockphoto-1160380152-170667a.jpg');
-    overflow: hidden;
-    margin: 0px;
-    width: 100%;
-
+pre {
+    margin: 3px;
 }
 
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.navbar a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease-in-out;
-    color: white;
-}
-
-/* Add a color to the active/current link */
-.navbar a.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-}
 .leaves {
+    filter: brightness(0.5) saturate(0.75);
     position: relative;
     top: 0;
     left: 0;
 }
-
 .leaf1 {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
 }
 .leaf2 {
+    max-width: 35%;
     position: absolute;
-    top: -300px;
-    left: 15%;
+    top: 300px;
+    right: -60px;
+    width: 50%;
+}
+.pine1 {
+    position: absolute;
+    top: -30px;
+    left: 0;
     width: 30%;
+}
+
+/* vines */
+.vine1, .vine1-1, .vine1-2, .vine1-3, .vine1-4 {
+    position: absolute;
+    max-height: 1500px;
+}
+.vine1 {
+    left: 3%;
+
+}
+.vine1-1 {
+    left: 34%;
+    max-height: 900px;
+    top: 0;
+}
+.vine1-2 {
+    right: 13%;
+    top: -50px;
+    max-height: 600px;
+}
+.vine1-3 {
+    left: 13%;
+    top: 0;
+    max-height: 1200px;
+}
+
+.vine2-1 {
+    position: absolute; 
+    right: 0;
+    width: 70%;
 }
