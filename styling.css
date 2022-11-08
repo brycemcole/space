@@ -4,10 +4,12 @@
 }
 
 body {
+    height: 76vh;
     font-family: Montserrat;
     padding-left: 0px;
     margin: 0px;
 }
+
 
 p {
     margin: 3px;
@@ -45,4 +47,22 @@ p {
 .navbar a.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
+}
+.leaves {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.leaf1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.leaf2 {
+    position: absolute;
+    top: -300px;
+    left: 15%;
+    width: 30%;
 }
